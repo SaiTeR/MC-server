@@ -1,0 +1,77 @@
+#Whether the player needs to craft the compendium before being able to use magic. If disabled, the player can use magic from the beginning.
+require_compendium_crafting = true
+#The default mana to burnout ratio, used in calculating spell costs.
+#Range: 0.0 ~ 10.0
+burnout_ratio = 0.5
+#The time in ticks between multiblock validation checks for the crafting altar.
+#Range: 1 ~ 200
+crafting_altar_check_time = 20
+#The maximum amount of etherium that can be stored in an obelisk / celestial prism / black aurem.
+#Range: 1 ~ 32767
+max_etherium_storage = 5000
+#The affinity shift that should be applied by affinity tomes.
+#Range: 0.0 ~ 1.0
+affinity_tome_shift = 0.1
+#Whether inscription table upgrading is allowed in-world. If disabled, the upgrades must be applied through crafting.
+enable_inscription_table_in_world_upgrading = true
+
+[mana]
+	#The base value for mana calculation. Mana is calculated as base + multiplier * (level - 1).
+	#Range: 0.0 ~ 1000000.0
+	base = 200.0
+	#The multiplier for mana calculation. Mana is calculated as base + multiplier * (level - 1).
+	#Range: 0.0 ~ 1000000.0
+	multiplier = 25.0
+	#The multiplier for mana regeneration. Mana regen is calculated as (base + multiplier * (level - 1)) * regen_multiplier.
+	#Range: 0.0 ~ 1000000.0
+	regen_multiplier = 0.001
+
+[burnout]
+	#The base value for burnout calculation. Burnout is calculated as base + multiplier * (level - 1).
+	#Range: 0.0 ~ 1000000.0
+	base = 80.0
+	#The multiplier for burnout calculation. Burnout is calculated as base + multiplier * (level - 1).
+	#Range: 0.0 ~ 1000000.0
+	multiplier = 10.0
+	#The multiplier for burnout regeneration. Burnout regen is calculated as (base + multiplier * (level - 1)) * regen_multiplier.
+	#Range: 0.0 ~ 1000000.0
+	regen_multiplier = 0.001
+
+[leveling]
+	#The base value for leveling calculation. XP cost is calculated as multiplier * base ^ level.
+	#Range: 0.0 ~ 10000.0
+	base = 1.2
+	#The multiplier for leveling calculation. XP cost is calculated as multiplier * base ^ level.
+	#Range: 0.0 ~ 10000.0
+	multiplier = 2.4
+	#The extra blue skill points a player gets on level 1.
+	#Range: 0 ~ 32767
+	extra_blue_skill_points = 2
+
+[spell_parts]
+	#Damage of damage-based components, in half hearts.
+	#Range: 1.0 ~ 32767.0
+	damage = 4.0
+	#Duration of effect-based components, in ticks.
+	#Range: 1 ~ 32767
+	duration = 600
+
+[entities]
+
+	[entities.dryad]
+		#Every X ticks, dryads have a chance to apply bonemeal to the ground around them.
+		#Range: 1 ~ 72000
+		bonemeal_timer = 200
+		#The chance of bonemeal being applied.
+		#Range: 0.0 ~ 1.0
+		bonemeal_chance = 0.01
+		#The radius of bonemeal application.
+		#Range: 1 ~ 32767
+		bonemeal_radius = 2
+		#If enough dryads are killed during this amount of time (in seconds), the Nature Guardian will spawn. Set this to 0 to disable this way of summoning the Nature Guardian (if you have an alternate way to spawn it).
+		#Range: 0 ~ 36000
+		kill_cooldown = 60
+		#If this amount of dryads is killed within the required timeframe, the Nature Guardian will spawn.
+		#Range: 1 ~ 32767
+		kills_to_nature_guardian_spawn = 20
+
