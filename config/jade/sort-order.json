@@ -45,6 +45,10 @@
   "productivebees:jar": null,
   "productivebees:productive_bee": null,
   "gravestone:grave": null,
+  "drinkbeer:beer_barrel": null,
+  "drinkbeer:trade_box": null,
+  "productivebees:solitary_nest": null,
+  "productivebees:jar": null,
   "minecraft:brewing_stand": null,
   "minecraft:beehive": null,
   "minecraft:command_block": null,
@@ -63,8 +67,6 @@
   "minecraft:progress": null,
   "jade:object_name": null,
   "gravestone:grave": null,
-  "productivebees:solitary_nest": null,
-  "productivebees:jar": null,
-  "arsmagicalegacy:altar": null,
-  "arsmagicalegacy:etherium": null
+  "drinkbeer:beer_barrel": null,
+  "drinkbeer:trade_box": null
 }
